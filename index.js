@@ -11,13 +11,13 @@ app.use(cors());
 
 //import routes for todo API
 const userRoutes = require("./routes/user-routes");
-const blogRoutes = require("./routes/blog-routes");
+const newsRoutes = require("./routes/news-routes");
 //mount the todo API routes
 app.use("/api/user", userRoutes);
-app.use("/api/blog", blogRoutes);
+app.use("/api/news", newsRoutes);
 
 app.use("/api", (req, res, next) => {
-      res.send("wrong api");
+      res.send("welcome to news API");
 })
 
 app.listen(PORT, () => {

@@ -17,7 +17,7 @@ const userSchema = new Schema({
         required: true,
         minlength: 6
     },
-    blogs:[{type: mongoose.Types.ObjectId, ref:"Blog", required: true }],
+    newss:[{type: mongoose.Types.ObjectId, ref:"News", required: true }],
 });
 
 module.exports = mongoose.model("User", userSchema); 

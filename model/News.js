@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const blogSchema = new Schema({
+const newsSchema = new Schema({
     title:{
         type: String,
         require: true
@@ -22,4 +22,4 @@ const blogSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model("Blog", blogSchema); 
+module.exports = mongoose.model("News", newsSchema); 
