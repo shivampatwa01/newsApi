@@ -16,7 +16,7 @@ const newsRoutes = require("./routes/news-routes");
 app.use("/api/user", userRoutes);
 app.use("/api/news", newsRoutes);
 
-app.use("/api", (req, res, next) => {
+app.use("/", (req, res, next) => {
       res.send("welcome to news API");
 })
 
