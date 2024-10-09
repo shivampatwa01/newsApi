@@ -21,20 +21,20 @@ app.use("/", (req, res, next) => {
     <h1>Welcome to the News API</h1>
     <h2>Endpoints:</h2>
     <ul>
-      <li><b>News Data:</b> Access news articles using the endpoint <code>/api/news</code>.</li>
+      <li><b>News Data:</b> Access news articles using the endpoint <code><b>/api/news</b></code>.</li>
       <ul>
-        <li><b>GET /api/news</b> - Fetch all news articles</li>
-        <li><b>POST /api/news/post</b> - Create a new news article</li>
-        <li><b>PUT /api/news/update/:id</b> - Update an existing news article by ID</li>
-        <li><b>GET /api/news/:id</b> - Get a specific news article by ID</li>
-        <li><b>DELETE /api/news/:id</b> - Delete a specific news article by ID</li>
-        <li><b>GET /api/news/user/:id</b> - Fetch news articles posted by a specific user</li>
+        <li><b>/api/news</b> - Fetch all news articles</li>
+        <li><b>/api/news/post</b> - Create a new news article</li>
+        <li><b>/api/news/update/:id</b> - Update an existing news article by ID</li>
+        <li><b>/api/news/:id</b> - Get a specific news article by ID</li>
+        <li><b>/api/news/:id</b> - Delete a specific news article by ID</li>
+        <li><b>/api/news/user/:id</b> - Fetch news articles posted by a specific user</li>
       </ul>
-      <li><b>User Data:</b> Manage user-related information with the endpoint <code>/api/user</code>.</li>
+      <li><b>User Data:</b> Manage user-related information with the endpoint <code><b>/api/user</b></code>.</li>
       <ul>
-        <li><b>GET /api/user</b> - Fetch all users</li>
-        <li><b>POST /api/user/signup</b> - Sign up a new user</li>
-        <li><b>POST /api/user/login</b> - Log in an existing user</li>
+        <li><b>/api/user</b> - Fetch all users</li>
+        <li><b>/api/user/signup</b> - Sign up a new user</li>
+        <li><b>/api/user/login</b> - Log in an existing user</li>
       </ul>
     </ul>
     <h2>Authentication:</h2>
